@@ -1,0 +1,85 @@
+
+
+$textPrimary: #070602;
+$textSecondar: #FAC200;
+$textLight:  #A2A2A2;
+$backgroundPrimary:#FCEB74;
+$backgroundLight:#FFF9AA;
+$backgroundDark: #000;
+$size27: 27px;
+$size23: 23px;
+$size20: 20px;
+$size16: 16px;
+$size14: 14px;
+$size12: 12px;
+
+@mixin  timefrmBtn($textcolor,$bgcolor){
+  font-size: $size12 ;
+  font-weight: 600;
+  background-color: $bgcolor;
+  color: $textcolor;
+  padding: 10px 25px;
+  margin-right: 6px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 18px;
+}
+@mixin font-weight($weight) {
+  $weights: (
+    thin: 100,
+    extra-light: 200,
+    ultra-light: 200,
+    light: 300,
+    normal: 400,
+    book: 400,
+    regular: 400,
+    medium: 500,
+    semi-bold: 600,
+    demi-bold: 600,
+    bold: 700,
+  )
+}
+
+@mixin customInput($size) {
+  width: 100%;
+  height: 60px;
+  background-color: #F9FAFB;
+  border: 1px solid #ECECEC;
+  border-radius: 10px;
+  display: flex;
+  justify-content: end;
+  padding: 15px 10px;
+  font-weight: 700;
+  color: $textPrimary;
+  font-size: $size;
+  margin-bottom: 9px;
+}
+
+@mixin submibBtn($bg,$color) {
+  width: 45%;
+  height: 50px;
+  border-radius: 15px;
+  color: $color;
+  background-color: $bg;
+  cursor: pointer;
+}
+@mixin togglecurrency($left,$bg) {
+  margin-right: 14px;
+      width: 24.02px;
+      height: 14px;
+      background-color: $bg;
+      border-radius: 100px;
+      border: none;
+      position: relative;
+      display: flex;
+      span{
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        z-index: 2;
+        position: absolute;
+        left: $left;
+        border-radius: 50%;
+        top: 2px;
+      }
+}
